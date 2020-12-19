@@ -1,6 +1,7 @@
 /*
     
     Note        :          Classical DP problem, but it's fully OC. That's why I added it. Also see the recursive solution ._.
+    				CPU time	: 		0.089 ms. 
 
     Link        :          http://lightoj.com/volume_showproblem.php?problem=1231
     
