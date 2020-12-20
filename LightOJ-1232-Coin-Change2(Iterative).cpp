@@ -2,6 +2,9 @@
    
     Note        :         I had practiced this problem before, but still it is an OC, right? Gotta do the recursive one by myself. 
                           CPU time        :           0.211 ms
+                          
+                          Edit:           "𝘛𝘩𝘦𝘳𝘦 𝘪𝘴 𝘯𝘰 𝘳𝘦𝘤𝘶𝘳𝘴𝘪𝘷𝘦 𝘢𝘤𝘤𝘦𝘱𝘵𝘦𝘥 𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯"-𝘔𝘰𝘥𝘦𝘳𝘢𝘵𝘰𝘳 𝘴𝘢𝘪𝘥.
+                                          link  :  https://codeforces.com/blog/entry/15450
  
     Link        :         http://lightoj.com/volume_showproblem.php?problem=1232
  
