@@ -1,13 +1,13 @@
 /*
    
-    Note        :            Count all the sub-palindromes in a string, we have two cases,
+    Note        :            Count all the sub-palindromes in a string,
                              Special case: 
                                 if string[start] == string[end], 
                                 then string[strt]+string[end] is a palindrome, and all the sub-palindrome in start+1....end-1 is also an additional palindrome,
                                 ie. let p is a subpalindrome in string[start+1.....end-1] then string[start] + p + string[end] is also a palindrome.
                                 that is why add 1 + dp(start+1,end-1) to the answer.
                                 
-                              for other cases, with or without special case, 
+                              for other cases, with or without the special case, 
                                 count the palindromes in string[start+1...end] and string[start...end-1] notice that palindromes in string[start+1...end-1] are being 
                                 counted twice, that's why subtract, string[start+1....end-1]
                                 
