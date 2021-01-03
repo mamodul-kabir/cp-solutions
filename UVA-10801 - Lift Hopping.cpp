@@ -1,6 +1,6 @@
 /*
     
-    Note        :               Get a dummy line for input or you will get input in wrong format. 
+    Note        :               Get a dummy line for input or you will get input in wrong format.    (Check line 108)
 
 
     Link        :               https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1742
