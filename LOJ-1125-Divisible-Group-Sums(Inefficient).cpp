@@ -3,6 +3,9 @@
     Note        :        This is an inefficient solution. To fully understand, please check the efficient one under the same name. 
                          Pragma comments are too much powerful. 
                          
+                         My mistake in this code: 
+                         I made the code similar to digit dp. the For loop in line 47 is totally unnecessary. This made the code run longer. 
+                         
                          CPU time: 957ms
 
     Link        :      
