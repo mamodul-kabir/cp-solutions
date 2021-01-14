@@ -4,6 +4,7 @@
                        sum = sum of money in all banks. 
                        Not OC. 
                        The dp become for i th bank in 0...n-1 banks, for j (0 to sum dollar) find the minimum probability of getting caught.  
+                       then get the maximum amount of money without getting caught. 
 
     Link        :      
  
