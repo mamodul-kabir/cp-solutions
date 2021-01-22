@@ -4,8 +4,9 @@
                                     I also had a 4^n inefficient solution which got TLE. 
                                     
                                     Things learnt: 
-                                    *you can use inter-dependent data-structure, eg. array of pairs in this case, because when a lesser step is needed for a mask, it is updated and the
-                                    last added value does not matter. But when the updatable step is equal, we consider the least last lift value. 
+                                    *you can use inter-dependent data-structure, eg. array of pairs in this case, at first in the min function, the First values of the both pair are
+				    compared, if one is less than the other one, we take the pair with the lesser First value. 
+				    	when both of the First value are equal, only then we consider the Second value and take the one with the lesser value. 
  
     Link        :      		    https://cses.fi/problemset/task/1653/
  
