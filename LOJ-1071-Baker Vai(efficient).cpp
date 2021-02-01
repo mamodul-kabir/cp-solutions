@@ -1,7 +1,7 @@
 /*
  
     Note        :        cpu-time: 81ms.
-                         *cn here stores whether q was originally shifted after the transition or not. 
+                         *cn here stores whether q was originally shifted to right after the transition or not. 
                          *p represents going and q represents coming or vise versa.
                          *i is row number. 
  
