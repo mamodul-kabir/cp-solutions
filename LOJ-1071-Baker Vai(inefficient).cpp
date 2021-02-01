@@ -1,6 +1,7 @@
 /*
  
-    Note        :        
+    Note        :        inefficient due to the for loop in dp function. check my other code. 
+    			 cpu-time: 418ms.
  
     Link        :      
  
