@@ -1,7 +1,7 @@
 /*
  
     Note        :        idea: hash the element according to their size and make them come into range 1-100, then do dp with 3 states.
-                               i means index, a means the last taken leftmost book, b means last taken rightmost book.
+                               i means index, a means the last taken left book, b means last taken right book.
                                we can skip the book,
                                if a book can be taken, ie. is >= left and <= right, then we can add it to left side or right side.
                                take the  max and print. 
