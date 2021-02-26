@@ -52,14 +52,26 @@ pii slv(eqn a,eqn b){
     return {xx,yy};    
 }
 
+int sq(int a){
+    return a * a;
+}
+
+ld ds(int a,int b,int c,int d){
+    return sqrt(sq(a - c) + sq(b - d));
+}
+
 bool in(str a,pii q){
     return min(a.x1,a.x2) <= q.F && q.F <= max(a.x2,a.x1) && min(a.y1,a.y2) <= q.S && q.S <= max(a.y2,a.y1);
 }
 
+bool comp(str a, str b){
+    ld asbs = ds(a.x1,a.y1,b.x1,b.y1), ase = ds(a.x1,a.y1,a.x2,a.y2), asbe = ds(a.x1,a.y1,b.x2,b.y2); 
+    ld aebs = ds(a.x2,a.y2,b.x1,b.y1), aebe = ds(a.x2,a.y2,b.x2,b.y2);
+    return (asbs <= ase && aebs <= ase) || (asbe <= ase && aebe <= ase);
+}
+
 bool corner(str a,str b){
-    bool one = (min(a.x1,a.x2) <= b.x1 && b.x1 <= max(a.x2,a.x1)), two = (min(a.x1,a.x2) <= b.x2 && b.x2 <= max(a.x2,a.x1));
-    bool three = (min(b.x1,b.x2) <= a.x1 && a.x1 <= max(b.x1,b.x2)), four = (min(b.x1,b.x2) <= a.x2 && a.x2 <= max(b.x1,b.x2));
-    return one || two || three || four;
+    return comp(a,b) || comp(b,a);
 }
 
 bool check(str a,str b){
