@@ -1,6 +1,8 @@
 /*
  
     Note        :         Fruteborce is da sweetest fruit. 
+    
+                          This is almost similar to UVA-11343 - Isolated Segments. 
  
     Link        :      
  
