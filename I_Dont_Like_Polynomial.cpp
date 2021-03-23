@@ -83,7 +83,7 @@ int main(){
     while(t--){
         ll n, tem = 0; cin>>n; 
         if(n%2 == 0){
-            __int128_t nx = (n + 4)/2; 
+            __int128_t nx = (n + 4)/2;                  //used long long for the first try and got the WA for that reason. 
             __int128_t big = (nx * nx)/4; 
             tem = big % mod;
         }else n += 1; 
