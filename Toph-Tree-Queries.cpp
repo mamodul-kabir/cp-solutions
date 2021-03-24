@@ -1,6 +1,7 @@
 /*
  
     Note        :                 hash the values within 10^6, use dsu on tree with BIT. 
+                                  n * log(n)^ 2 offline. 
  
     Link        :                 https://toph.co/p/tree-queries?fbclid=IwAR1PARQ596k4lxTj0gDvu5y-Iw_f-I9QoB9uAuRDmwBzW7zl7qCj3Klk6B8
  
