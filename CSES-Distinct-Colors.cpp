@@ -2,7 +2,7 @@
     
     Note        :           Hashed the colors in range 1...2*10^5, used dsu on tree to find the distinct colors. 
  
-    Link        :       
+    Link        :           https://cses.fi/problemset/task/1139/
  
     Boka hoye gelum...
 */
