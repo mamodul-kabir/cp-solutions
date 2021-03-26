@@ -1,6 +1,6 @@
 /*
     
-    Note        :           
+    Note        :           Hashed the colors in range 1...2*10^5, used dsu on tree to find the distinct colors. 
  
     Link        :       
  
