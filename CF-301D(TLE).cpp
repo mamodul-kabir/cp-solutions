@@ -1,6 +1,7 @@
 /*
     
     Note        :       Tried to solve with MO's algo with hilbert's curve. Got TLE.   
+                        Edit: I missed a key point. the array will be permutation of numbers from 1...n 
  
     Link        :       https://codeforces.com/contest/301/problem/D
  
