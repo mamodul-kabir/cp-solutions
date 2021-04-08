@@ -27,8 +27,10 @@ using ld = long double;
 const ll mod = 1000000007;
 const ll oo = 3372036000000000;
 const ll si = 200005;
+const ll block = 450; 
 
-constexpr int logn = 20;
+
+constexpr int logn = 18;
 constexpr int maxn = 1 << logn;
 
 long long hilbertorder(int x, int y)
@@ -51,10 +53,9 @@ long long hilbertorder(int x, int y)
     return d;
 }
 
-
-bool iv[si]; 
-int oc[si],n,q,mx = -1; 
-vector<int> ar,di[si],mul[si]; 
+ 
+int oc[si],n,q, mul[si]; 
+vector<int> ar,di[si];  
 ll heu = 0,res = 0; 
 
 
@@ -69,43 +70,43 @@ struct qq
 
 bool comp(qq a,qq b){
     return a.ord < b.ord; 
+    //ll x = a.l/block, y = b.l/block; 
+    //if(x == y) return a.r < b.r; 
+    //return x < y; 
 }
 
 void add(int x){
     //cout<<"add" sp<<x sp; 
     oc[x] += 1; 
+    mul[x] -= 1; 
     for(int r: di[x]){
         res += oc[r]; 
+        mul[r] += 1; 
     }
-    for(int r: mul[x]){
-        res += oc[r]; 
-    }
+    res += mul[x]; 
     //cout<<res el;
 }
 
 void remove(int x){ 
     //cout<<"rem" sp<<x sp;
+    mul[x] += 1; 
     for(int r: di[x]){
         res -= oc[r]; 
+        mul[r] -= 1; 
     }
     oc[x] -= 1;
-    for(int r: mul[x]){
-        res -= oc[r];  
-    }
+    res -= mul[x]; 
     //cout<<res el;
 }
 
 void do_di(){
-    for(int r: ar){
+    for(int r = 1; r <= n; r++){
         for(int i = 1; i * i <= r; i++){
-            if(iv[i] && r % i == 0){ 
+            if(r % i == 0){ 
                 di[r].pb(i); 
                 int ot = r/i; 
-                if(ot != i && iv[ot]) di[r].pb(ot); 
+                if(ot != i ) di[r].pb(ot); 
             }
-        }
-        for(int m = r * 2; m <= mx; m += r) if(iv[m]){
-            mul[r].pb(m); 
         }
     }
     return; 
@@ -121,16 +122,15 @@ int main(){
     freopen("output.txt","w",stdout);
 #endif
 //*/
-    memset(iv,0,sizeof(iv)); memset(oc,0,sizeof(oc)); 
+    memset(mul,0,sizeof(mul)); memset(oc,0,sizeof(oc)); 
     cin>>n>>q; 
     for(int i = 0; i < n; i++){
-        int x; cin>>x; 
-        mx = max(mx,x); 
-        iv[x] = 1; 
+        int x; cin>>x;  
         ar.pb(x); 
     }
-    do_di(); 
-    vector<int> ans(q); 
+    do_di();  
+    int ans[q]; 
+    //cout<<"done" el; 
     vector<qq> que(q);
     for(int i = 0; i < q; i++){
         int l,r; cin>>l>>r; 
