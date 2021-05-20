@@ -4,6 +4,8 @@
                         2. for each prime factor of C, find the highest power of that prime that has a divisor in the range A....B
                         3. for each prime, divide the highest power(from #2) in range by the power in of that prime in C (from #1).
                         4. The answer is the minimum result found in #3.
+                        
+                        Got a few TLE for not using __int128_t for multiplications. 
     
     Link        :       https://toph.co/p/big-lcm
  
