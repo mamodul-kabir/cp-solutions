@@ -1,7 +1,9 @@
 /*
  
     Note        :         My first Heavy-Light Decomposition solution. 
-                                          =^.^=
+                                          =^.^=			      
+			  To be noted: lvl[1] = 0; 
+
  
     Link        :      
  
