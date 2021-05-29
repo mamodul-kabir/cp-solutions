@@ -1,7 +1,7 @@
 
 /*
 
-              Note:             *sometimes it is better to use map and sets. In this problem the distinct values are scattered in a range. Set and map in this case. 
+              Note:             *sometimes it is better to use map and sets. In this problem the distinct values are scattered in a range. Set and map helped. 
                                 *defining a separate vector for each "decompose" function call caused TLE.
               Link:             https://oj.uz/problem/view/IOI11_race        
 
