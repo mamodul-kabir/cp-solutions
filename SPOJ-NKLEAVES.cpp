@@ -1,6 +1,7 @@
 /*
     
     Note        :           persistent lazy segment tree + divide and conquer dp optimization
+                            Shows 50 points in the submission page, and also shows that the problem is solved. idk what that means. its just my submission. 
  
     Link        :           https://www.spoj.com/problems/NKLEAVES/
  
